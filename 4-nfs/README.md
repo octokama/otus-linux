@@ -1,4 +1,4 @@
-# otus-linux-les-3
+# otus-linux-les-4
 ## Работа с NFS
 Для поднятия машины из Vagrantfile `vagrant up` и подключение `vagrant ssh nfs-server` и `vagrant ssh nfs-client`
 
