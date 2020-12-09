@@ -12,3 +12,8 @@
 ```
 0 * * * * /usr/bin/flock -xn /var/lock/parse_log.lock -c 'sh /root/parse_log.sh'
 ```
+
+[parse_log.sh]:https://github.com/octokama/otus-linux/blob/main/8-bash/parse_log.sh
+[access-4560-644067.log]:https://github.com/octokama/otus-linux/blob/main/8-bash/access-4560-644067.log
+[last_line]:https://github.com/octokama/otus-linux/blob/main/8-bash/last_line
+[mail_text]:https://github.com/octokama/otus-linux/blob/main/8-bash/mail_text
