@@ -21,7 +21,7 @@ sys     0m0,021s
 notnice complete
 
 ```  
-4. [compare.sh nice] - 2 конкурирующих процесса по CPU с разными nice  
+5. [compare.sh nice] - 2 конкурирующих процесса по CPU с разными nice  
 для запуска использовать ./compare.sh  
 вывод консоли:  
 ```
