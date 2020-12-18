@@ -1,0 +1,9 @@
+real    0m0,252s
+user    0m0,251s
+sys     0m0,001s
+notnice complete
+
+real    0m0,206s
+user    0m0,194s
+sys     0m0,011s
+nice complete
