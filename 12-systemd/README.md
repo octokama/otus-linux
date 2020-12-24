@@ -46,7 +46,7 @@ systemctl status spawn-fcgi
 systemctl start httpd@one.service
 ```
   
-4\*. Скачать демо-версию Atlassian Jira и переписать основной скрипт запуска на unit-файл.  
+4.\* Скачать демо-версию Atlassian Jira и переписать основной скрипт запуска на unit-файл.  
   
 установка java: `yum install java-1.7.0-openjdk-devel -y`  
 скачивание и установка Atlassian Jira:  
@@ -55,7 +55,7 @@ wget https://www.atlassian.com/software/jira/downloads/binary/atlassian-jira-sof
 tar -zxvf atlassian-jira-software-7.12.3.tar.gz && cd atlassian-jira-software-7.12.3-standalone/
 ```
   
-создание конфига: `/etc/sysconfig/jira`
+создание конфига: `/etc/sysconfig/jira`  
 [jira] - файл с конфигом для юнита  
 [jira.service] - юнит для сервиса  
   
