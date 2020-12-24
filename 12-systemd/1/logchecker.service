@@ -1,0 +1,7 @@
+[Unit]
+Description=Log Checker
+
+[Service]
+Type=oneshot
+EnvironmentFile=/etc/sysconfig/logchecker
+ExecStart=/opt/logchecker.sh $WORD $LOG

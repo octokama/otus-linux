@@ -1,0 +1,9 @@
+[Unit]
+Description=Run Log Checker Service every 30 second
+
+[Timer]
+OnUnitActiveSec=30
+Unit=logchecker.service
+
+[Install]
+WantedBy=multi-user.target
