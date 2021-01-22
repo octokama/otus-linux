@@ -99,9 +99,10 @@ send
 Для решения проблемы необходимо создать модули по ошибкам  
 Описание ошибок: ```/var/log/audit/audit.log```, ```/var/log/messages```, ```systemctl status named```  
   
-Какой алгоритм решил проблему:
-1. Нам нужно убрать все исключения и ошибки по линии SELINUX, чтобы система безопасности перестала ругаться
-- выполняем команду ```audit2why < /var/log/audit/audit.log``` и видим:
+Какой алгоритм решил проблему:  
+Нам нужно убрать все ошибки SELinux.  
+```audit2why < /var/log/audit/audit.log``` 
+Результат:  
 ```
 [root@ns01 vagrant]# audit2why < /var/log/audit/audit.log
 type=AVC msg=audit(1587231618.482:1955): avc:  denied  { search } for  pid=7268 comm="isc-worker0000" name="net" dev="proc" ino=33134 scontext=system_u:system_r:named_t:s0 tcontext=system_u:object_r:sysctl_net_t:s0 tclass=dir permissive=0
