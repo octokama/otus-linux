@@ -126,7 +126,7 @@ type=AVC msg=audit(1587231618.482:1956): avc:  denied  { search } for  pid=7268 
 [root@ns01 vagrant]# cat /var/log/messages | grep ausearch
 Apr 18 17:40:20 localhost python: SELinux is preventing /usr/sbin/named from search access on the directory net.#012#012*****  Plugin catchall (100. confidence) suggests   **************************#012#012If you believe that named should be allowed search access on the net directory by default.#012Then you should report this as a bug.#012You can generate a local policy module to allow this access.#012Do#012allow this access for now by executing:#012# ausearch -c 'isc-worker0000' --raw | audit2allow -M my-iscworker0000#012# semodule -i my-iscworker0000.pp#012
 ```
-После ввода предложенной команды ошибка появлялась несколько раз меня команду.  
+После ввода предложенной команды ошибка появлялась несколько раз, меняя команду.  
 Список команд:  
 ```ausearch -c 'isc-worker0000' --raw | audit2allow -M my-iscworker0000 | semodule -i my-iscworker0000.pp```  
 ```ausearch -c 'isc-worker0000' --raw | audit2allow -M my-iscworker0001 | semodule -i my-iscworker0001.pp```  
